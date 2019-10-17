@@ -6,32 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Intention Timer</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Hepta+Slab&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1>Intention Timer</h1>
-    <script src="./main.js"></script>
-    <main class="new-activity">
-      New Activity
-      <container class="activity-container">
-        Select a category:
-        <section class="category">
-          <h2>Study</h2>
-          <h2>Meditate</h2>
-          <h2>Exercise</h2>
-        </section>
-        <section class="user-inputs">
-          <h3>What would you like to accomplish during this time?</h3>
-          <input class="accomplish-input" type="text" />
-          <h3>Minutes</h3>
-          <input class="minutes-input" type="number" />
-          <h3>Seconds</h3>
-          <input class="seconds-input" type="number" />
-          <button class="start-activity-button">START ACTIVITY</button>
-        </section>
-      </container>
+    <main class="main">
+      <h1>Intention Timer</h1>
+      <div id="countdown"></div>
+      <img class="lightdark-button" src="./lightdark.svg" />
+      <main class="new-activity">
+        <h1>New Activity</h1>
+        <div class="activity-to-be-added"></div>
+        <container class="activity-container">
+          Select a category:
+          <section class="category">
+            <button class="study">Study</button>
+            <button class="meditate">Meditate</button>
+            <button class="exercise">Exercise</button>
+          </section>
+          <section class="user-inputs">
+            <h3>What would you like to accomplish during this time?</h3>
+            <input class="accomplish-input" type="text" />
+            <h3>Minutes</h3>
+            <input class="minutes-input" type="number" />
+            <h3>Seconds</h3>
+            <input class="seconds-input" type="number" />
+            <button class="start-activity-button">START ACTIVITY</button>
+          </section>
+        </container>
+      </main>
+      <aside class="past-activities-aside">
+        <h1>Past Activity</h1>
+      </aside>
+      <script src="./main.js"></script>
     </main>
-    <aside class="past-activities-aside">
-      Past Activity
-    </aside>
   </body>
 </html>
