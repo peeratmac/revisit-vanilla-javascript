@@ -1,3 +1,26 @@
-h1 {
-  color: blue;
+* {
+  font-family: 'Hepta Slab', serif;
+}
+
+img {
+  cursor: pointer;
+  width: 50px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.border-red {
+  border: solid 5px red;
+}
+
+.border-new-activity {
+  border: solid 3px black;
+  border-radius: 2px;
+}
+
+.toggle-dark {
+  background: black;
+  color: white;
 }
