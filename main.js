@@ -8,11 +8,15 @@ var startActivity = document.querySelector('.start-activity-button');
 var activityToBeAdded = document.querySelector('.activity-to-be-added');
 var lightdarkButton = document.querySelector('.lightdark-button');
 var main = document.querySelector('body');
+var pastActivityToBeAdded = document.querySelector(
+  '.past-activity-to-be-added'
+);
 
 studyButton.addEventListener('click', addTheHighlight);
 meditateButton.addEventListener('click', addTheHighlight2);
 exerciseButton.addEventListener('click', addTheHighlight3);
 startActivity.addEventListener('click', appendActivity);
+startActivity.addEventListener('click', appendPastActivity);
 lightdarkButton.addEventListener('click', toggleLightDark);
 
 function addTheHighlight(event) {
@@ -52,6 +56,12 @@ function appendActivity() {
       document.getElementById('countdown').innerHTML = 'Finished';
     }
   }, 1000);
+}
+
+function appendPastActivity() {
+  var pastActivity = `<p>Activity Type: ${studyButton.value}</p>`;
+
+  pastActivityToBeAdded.insertAdjacentHTML('afterbegin', pastActivity);
 }
 
 function toggleLightDark() {
