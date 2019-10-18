@@ -9,6 +9,11 @@ img {
 
 button {
   cursor: pointer;
+  outline: 0;
+}
+
+#countdown {
+  font-size: 50px;
 }
 
 .border-red {
